@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.AppLogo {
+  width: 15%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.divider {
+  border-bottom: 1px solid #ddd;
+}
+
+.header-section {
+  margin: 15px 0px;
+}
+
+.navigationstyle {
+  padding-right: 50px;
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+}
+
+.navigationstyle:hover {
+  color: #219EBC;
+}
+
+.navigationstyle.active::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #219EBC;
+  color: #219EBC;
+  position: absolute;
+  left: -20px;
+  border-radius: 100%;
+  top: 8px;
+}
+
+.navigationstyle.active {
+  color: #219EBC;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.img-sec {
+  background-color: #E3F7F4;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prod-details{
+  padding-top: 10px;
+  position: relative;
+}
+.products-sec {
+padding-bottom: 40px;
+cursor: pointer;
+}
+
+.hideproduct{
+  display: none;
+}
+
+.hideproduct .buynow-btn{
+  text-align: right;
+}
+
+.buynow-btn{
+  position: relative;
+}
+
+.products-sec:hover .hideproduct{
+  display: flex;
+}
+
+.products-sec:hover .hiderating{
+  display: none;
+}
+
+.buy-now{
+  position: absolute;
+    right: 0;
+    top: -25px;
 }
