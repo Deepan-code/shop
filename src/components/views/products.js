@@ -58,7 +58,7 @@ export const Products = () => {
                                             <div className="row hideproduct">
                                                 <div className="col">
                                                     <div className="viewproduct">
-                                                      
+
                                                         <ViewProduct>View Product</ViewProduct>
                                                     </div>
                                                 </div>
